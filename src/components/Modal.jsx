@@ -8,6 +8,7 @@ const Modal = ({ modal }) => {
     const [labelPercent, setLabelPercent] = useState(' ')
     const [label, setLabel] = useState('Analizando Pensamientos')
     const [hidden, setHidden] = useState('hidden')
+    const [mindfreak, setMindfreak] = useState('Leyendo tu mente 🧠')
 
     useEffect(() => {
         const chargingModal =() => {
@@ -96,6 +97,7 @@ const Modal = ({ modal }) => {
                 setLabelPercent('Completado')
                 setLabel(`Pensaste en el Numero `)
                 setHidden('display')
+                setMindfreak('MindFreak 🧠')
             }, 7800);
 
             
@@ -119,7 +121,7 @@ const Modal = ({ modal }) => {
             {/*header*/}
             <div className="flex items-center justify-center p-5 border-b border-solid border-blueGray-200 rounded-t">
                 <h3 className="text-2xl font-semibold text-center">
-                Leyendo tu mente 🧠
+                {mindfreak}
                 </h3>
                 
             </div>
